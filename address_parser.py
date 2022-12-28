@@ -1,4 +1,5 @@
 import re
+import sys
 
 # Regex for number at start of string => ^[0-9]
 # Regex for strings that have -No 1000- => No\s\d+\D*$
@@ -29,5 +30,16 @@ def address_parser(string):
     return street, number
 
 
-if "__name__" == "__main__":
-    address_parser()
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print('Invalid number of arguments')
+        print('')
+        print('Using Test Case:')
+        print('Address: Palmeiras 12')
+        ad = address_parser('Palmeiras 12')
+        print('Street: ' + ad[0] + ' Number: ' + ad[1])
+        print('')
+    else:
+        print('Address: ' + sys.argv[1])
+        ad = address_parser(sys.argv[1])
+        print('Street: ' + ad[0] + ' Number: ' + ad[1])
