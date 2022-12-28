@@ -30,3 +30,8 @@ Também utilizarei o terminal embutido no VS Code, usando zsh na WSL rodando Ubu
 
 Testes são feitos através do arquivo ```tester.py``` através do comando ```python tester.py``` ou ```python tester.py -v```
 
+## Método de Utilização
+
+Para usar de modo a fazer apenas uma conversão:
+
+```python address_parser.py "Endereço Número"```
