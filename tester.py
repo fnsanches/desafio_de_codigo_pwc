@@ -38,4 +38,5 @@ class TestAddressParser(unittest.TestCase):
         self.assertEqual(ap(t4), ('Rue de la République', '4'))
 
 
-unittest.main()
+if __name__ == "__main__":
+    unittest.main()
